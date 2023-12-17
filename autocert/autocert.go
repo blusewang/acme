@@ -36,7 +36,7 @@ import (
 )
 
 // DefaultACMEDirectory is the default ACME Directory URL used when the Manager's Client is nil.
-const DefaultACMEDirectory = "https://acme.zerossl.com/v2/DV90"
+var DefaultACMEDirectory = "https://acme.zerossl.com/v2/DV90"
 
 // createCertRetryAfter is how much time to wait before removing a failed state
 // entry due to an unsuccessful createCert call.
